@@ -10,10 +10,15 @@ function List(props) {
         }
     })
 
+    function setColor(e) {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        e.target.style.color = "#" + randomColor;
+      }
+
     return (
         <ul className='list'>
             {filteredData.map((item) => (
-                <li key={item.id}>{item.city}</li>
+                <li key={item.id} onLoad={setColor}>{item.city}</li>
             ))}
         </ul>
     )

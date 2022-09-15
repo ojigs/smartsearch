@@ -13,6 +13,10 @@ h1 {
   color: rgb(1, 1, 59);
 }
 
+h2 {
+  color: #fb8500;
+}
+
 .search {
   width: 30%;
 }
@@ -25,11 +29,11 @@ ul li {
 
 .list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 25px;
 }
 
 li {
-  min-width: 100px;
+  width: calc(25% - 25px);
 }

@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="main">
       <h1>Smart Search</h1>
+      <h2>Discover new cities around the globe</h2>
       <div className="search">
         <TextField
           id="outlined-basic"
